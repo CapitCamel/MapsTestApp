@@ -8,8 +8,8 @@ class Converter {
         val listLatLng = arrayListOf<LatLng>()
         for (points in listDouble) {
             for (point in points[0]) {
-                var lat = point[0]
-                var lng = point[1]
+                var lat = point[1]
+                var lng = point[0]
 
                 if (lat < 90 && lat > -90) {
                     if (lng < 180 && lng > -180) {
